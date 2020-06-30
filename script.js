@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     searchAnimate = requestAnimationFrame(search);
     countLeft += 2;
     countTop -= 1 / 20;
-    if (countLeft > document.documentElement.clientHeight) {
+    if (countLeft >= document.documentElement.clientHeight * 2) {
       countLeft = -helicopter.offsetLeft;
       helicopter.style.width = 250 + 'px';
     }
